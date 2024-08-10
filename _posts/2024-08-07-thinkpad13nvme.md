@@ -19,12 +19,21 @@ We later discovered that the specsheet listed SATA m.2 as the only [storage opti
 
 So enough talking done, i got to disassembling the laptop and getting down to desolder two capacitors, C224 and C237, and bridging them with some magnet wire,
 it was kind of difficult but nothing some flux and holding a steady hand can't fix.  
+<<<<<<< HEAD
 ![image](https://github.com/user-attachments/assets/47bae9c3-e3e3-4adb-8fd6-e4970c90c5b4)   
+=======
+![image](https://github.com/user-attachments/assets/47bae9c3-e3e3-4adb-8fd6-e4970c90c5b4)  
+>>>>>>> 331b588b010dc91c1e2b1fe26145d12f3d83647c
 The end result isn't exactly eye candy but that's not what matters, what matters is that it works!
 
 
 Or.. not, Laptop reassembled, with a drive chucked from my main machine, i tried booting it up but no luck the drive would not show up in the bios entries nor linux, 
+<<<<<<< HEAD
 though as a tip from my friend i would apparently also need to bridge two other pads [(PEDET and GND)](https://github.com/user-attachments/assets/807ed9ac-0f56-4f43-aea4-028ddc73a5bb) for the SSD to be detected, because despite the components being present on the boardview and schematic they were not ultimately placed during assembly.
+=======
+though as a tip from my friend i would apparently also need to bridge two other pads [(PEDET and GND)](https://github.com/user-attachments/assets/807ed9ac-0f56-4f43-aea4-028ddc73a5bb) for the SSD to be detected,  
+because despite the components being present on the boardview and schematic they were not ultimately placed during assembly.
+>>>>>>> 331b588b010dc91c1e2b1fe26145d12f3d83647c
 ![image](https://github.com/user-attachments/assets/f1ebd3a9-682c-41c5-9b0f-7b0e58dfb861)  
 
 Preparing for what should be the final test i once again borrowed an ssd from my main laptop, which runs debian btw, painstakingly reseated the keyboard and 
