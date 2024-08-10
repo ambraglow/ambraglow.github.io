@@ -1,3 +1,7 @@
+---
+layout: post
+title: Modifying the Thinkpad 13 Gen 1 to unlock its full PCIe potential
+---
 # Modifying the Thinkpad 13 Gen 1 to unlock its full PCIe potential
 A Few weeks ago i acquired a Thinkpad 13 Gen 1 on ebay, sold by a recycling company, it was listed for parts
 and with the wrong model name in the title.  
