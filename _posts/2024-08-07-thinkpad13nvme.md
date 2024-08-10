@@ -14,7 +14,7 @@ is not exactly ideal as it would be when [correctly implemented for NVMe](https:
 We later discovered that the specsheet listed SATA m.2 as the only [storage option.](https://github.com/user-attachments/assets/08a2fda6-a2ea-44c7-a890-eeec80adb582).
 
 So enough talking done, i got to disassembling the laptop and getting down to desolder two capacitors, C224 and C237, and bridging them with some magnet wire,
-it was kind of difficult but nothing some flux and holding a steady hand can't fix. 
+it was kind of difficult but nothing some flux and holding a steady hand can't fix.  
 ![image](https://github.com/user-attachments/assets/47bae9c3-e3e3-4adb-8fd6-e4970c90c5b4)
 The end result isn't exactly eye candy but that's not what matters, what matters is that it works!
 
