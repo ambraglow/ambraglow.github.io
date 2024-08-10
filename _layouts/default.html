@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <link href="{{ "/assets/css/style.css" | relative_url }}" rel="stylesheet" type="text/css" media="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img class="wallpaper" src="{{ "/assets/img/wallpaper.png" | relative_url }}"></img>
+        <header>
+            {% include header.html %}
+        </header>
+        <main>{{content}}</main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

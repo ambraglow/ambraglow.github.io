@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gigabyte Aorus B450 pro motherboard repair | ACME Website</title>
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img class="wallpaper" src="/assets/img/wallpaper.png"></img>
+        <header>
+            <div class="cover">
+    <nav class="navmenu">
+        <a href="/">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/about.html">About</a>
+    </nav>
+</div>
+        </header>
+        <main><div class="container">
+  <h2 class="spacing">Gigabyte Aorus B450 pro motherboard repair</h2>
+
+  <div class="blog-post spacing">
+    <p class="summary"><span class="date">December 12, 2023</span></p>
+    <h1 id="aorus-b450-pro-repair">Aorus B450 pro repair</h1>
+<p>I was in need of a pc upgrade so i spent a while looking for used motherboards on the local used market, specifically AM4 motherboards with the B450 chipset.
+I came across a listing for a <strong>Gigabyte Aorus B450 pro</strong> for 50 bucks so, out of curiosity as to why the price was so low, i clicked on it and checking out the description
+i found out why:</p>
+<blockquote>
+  <p>selling this motherboard because i was updating the bios and something went wrong, black screen on boot, someone could probably save it by flashing it or something like that idk how to do, i already switched to another motherboard.</p>
+</blockquote>
+
+<p>“must be an easy fix” i told myself, unaware of the chaos to come, <em>so i just bought it right away</em>.
+I receive it the next week, and the next few are a waiting game for the other components to be delivered - now it’s Thursday and i’m HYPED to get this thing working, so i assemble it and
+the system <em>partially</em> works:</p>
+<ul>
+  <li>RGB lights are on</li>
+  <li>i get a POST beep without errors</li>
+  <li>motherboard logo screen</li>
+  <li>debugging lights work and the VGA led is on</li>
+</ul>
+
+<p>What doesn’t work though:</p>
+<ul>
+  <li>any type of input</li>
+  <li>the screen is literally frozen</li>
+</ul>
+
+<p><img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/dde4f5c5-d992-4644-be69-05d249c1c656" alt="image" /></p>
+
+<p>Something’s up, and in the course of a few days i try every possible troubleshooting step ever tried in the history of ever, swapping ram stick channels, only one ram stick in at a time and
+since the led is stuck on the VGA step of boot i try using 3 different graphics cards but without success… Basically this thing is useless at the moment and my guess is one of the bios chips’ gone bad and dual bios didn’t kick in.</p>
+
+<p><img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/9e3621ea-26dc-4c49-b846-50c384326e99" alt="image" /></p>
+
+<p>So i do the only thing any sane person would do and desolder the M_bios microchip.
+“MX25U12873F” is written on it, i look up the datasheet and would you look at that.. 1.8v spi flash. son. of. a. bitch. - i dust off my rp2040 board and drop <img src="https://github.com/kukrimate/pico-serprog" alt="pico-serprog" /> on it.<br />
+Since it has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for CLK, CS and SI, one transistor driven for SO and for power? 
+just solder some wires on the motherboard and use its power supply, to make things easier i put it on a breakout i DIY’d a while back.</p>
+
+<p><img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/2743f70c-15e5-445e-a6d1-3a8ac5169821" alt="image" /></p>
+
+<p><img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/e2629bcd-a7dd-4b2f-bebb-d75d8171e764" alt="image" />
+<img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/d5ca06b4-5a2c-48e1-ba2b-291c80cd7778" alt="image" />
+:(</p>
+
+<p>This didn’t work, i found out later i may have accidentally killed the chip by swapping the power supply, i’m still not sure, anyway it wasn’t a big loss for me since i had another chip - so i went with that, desoldered and with it on the breakout i’m ready to begin testing. <br />
+<em><strong>Success!</strong></em> i was able to read and write data to it, obviously i made a backup of the image that was on it and went on a quest to find a bios dump online (so many paid websites), this was hard and i didn’t have much success except for a shady one extracted from the <strong>wifi</strong> version of the motherboard. <br />
+<img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/033f8747-be51-422e-abc4-cfdd6a84b4c5" alt="image" />
+<img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/6bb7a718-bae4-452e-947e-32ce86fee3cb" alt="image" /></p>
+
+<p>With the firmware loaded on the chip i solder it back on, hoping for any signs of life, i short the two pwr_btn contacts then the fans spin up, the CPU led lights up then DRAM but the VGA led doesn’t come on, “fuck” i thought to myself - “i’m really out of options”,
+EXCEPT i try one last thing in an act of desperation and solder the m_bios chip in place of the b_bios one.
+<img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/b55c3243-85ce-445c-8528-af8d28f6d904" alt="image" />
+<em>the actual moment</em></p>
+
+<p>“FINALLY”, “IT WORKS”, i absolutely explode with happiness as the machine comes to life and i finally am able to enter the bios with everything detected and working.</p>
+
+<p><img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/25911ba3-2aed-46df-a765-5be4c638ba28" alt="image" />
+<img src="https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/bda7b783-39e9-48e7-ab07-d6cb56923fda" alt="image" /></p>
+
+<p>P.S turns out the two chips share power lines, i ripped one on the b_bios side for vcc and that’s why it worked when i soldered b_bios on.. probably making mechanical contact</p>
+
+  </div>
+</div></main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
