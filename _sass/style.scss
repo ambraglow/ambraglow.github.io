@@ -96,12 +96,10 @@ img[alt=image] {
   margin:left;
   margin:right
 }
-
 .blog-post p {
   text-align:left;
-  margin: 0rem 20rem;
+  margin:0rem 20rem
 }
-
 p.summary {
   text-align:center
 }
@@ -114,10 +112,9 @@ p.summary {
 }
 .blog-post li {
   text-align:left;
-  margin:0rem 20rem;
+  margin:0rem 20rem
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .pfp {
     width:30%;
     height:30%;
@@ -140,6 +137,13 @@ p.summary {
   }
   .blog-post p {
     text-align:left;
-    margin: 0rem 0rem;
+    margin:0rem 0rem
+  }
+  .blog-post li {
+  text-align:left;
+  margin:0rem 20rem
+  }
+  p.summary {
+  text-align:center
   }
 }
