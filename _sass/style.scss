@@ -2,6 +2,40 @@
   font-family:"PixelOperator";
   src:url(font/PixelOperator.ttf)
 }
+@media only screen and (max-width: 400px) {
+  .pfp {
+    width:30%;
+    height:30%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+  }
+  .introcontainer {
+    display:contents
+  }
+  .intro {
+    margin:10%
+  }
+  .wallpaper {
+    width:100%
+  }
+  img[alt=image] {
+    width:50%;
+    height:50%
+  }
+  .blog-post p {
+    text-align:left;
+    margin:0rem 0rem
+  }
+  .blog-post li {
+  text-align:left;
+  margin:0rem 0rem;
+  }
+  p.summary {
+  text-align:center
+  }
+}
+
 body {
   background-color:#131313;
   color:#00E600;
@@ -118,36 +152,4 @@ p.summary {
   text-align:left;
   margin:0rem 20rem
 }
-@media only screen and (max-width: 400px) {
-  .pfp {
-    width:30%;
-    height:30%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto
-  }
-  .introcontainer {
-    display:contents
-  }
-  .intro {
-    margin:10%
-  }
-  .wallpaper {
-    width:100%
-  }
-  img[alt=image] {
-    width:50%;
-    height:50%
-  }
-  .blog-post p {
-    text-align:left;
-    margin:0rem 0rem
-  }
-  .blog-post li {
-  text-align:left;
-  margin:0rem 0rem;
-  }
-  p.summary {
-  text-align:center
-  }
-}
+
