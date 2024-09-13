@@ -147,6 +147,10 @@ footer {
   flex-grow: 1;
 }
 
+.text p{
+  color: gray;
+}
+
 @media (max-width: 700px) {
   .pfp {
     width:30%;
