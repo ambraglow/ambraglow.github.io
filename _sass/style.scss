@@ -2,7 +2,6 @@
   font-family:"PixelOperator";
   src:url(font/PixelOperator.ttf)
 }
-
 body {
   background-color:#131313;
   color:#00E600;
@@ -119,7 +118,6 @@ p.summary {
   text-align:left;
   margin:0rem 20rem
 }
-
 @media (max-width: 700px) {
   .pfp {
     width:30%;
@@ -141,10 +139,13 @@ p.summary {
     width:50%;
     height:50%
   }
+
   .blog-post p {
     text-align:left;
-    margin:0rem 0rem
+    margin:0rem 1rem 0rem;
+    font-size: 13px;
   }
+  .blog-post a{font-size: 13px;}
   .blog-post li {
     text-align:left;
     margin:0rem 0rem
@@ -153,4 +154,3 @@ p.summary {
     text-align:center
   }
 }
-
