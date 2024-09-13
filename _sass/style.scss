@@ -126,9 +126,11 @@ footer {
 }
 
 .ftcontainer {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  display:flex;
+  flex-direction:row;
+  gap:1rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .buttons {
