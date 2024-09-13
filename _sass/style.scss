@@ -118,18 +118,21 @@ img[alt=image] {
     height:50%
   }
   .blog-post p {
-  text-align:left;
+    text-align:left
   }
 }
 .blog-post p {
   text-align:left;
-  padding-right: 30%;
-  padding-left: 30%;
+  padding-right:30%;
+  padding-left:30%
 }
 p.summary {
   text-align:center
 }
 .blog-post img {
-  border:white;
+  border:gray;
   border-style:groove;
+  margin: 1rem auto;
+  width: 15rem;
+  display:block;
 }
