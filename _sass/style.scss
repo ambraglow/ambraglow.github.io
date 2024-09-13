@@ -121,7 +121,12 @@ img[alt=image] {
 
 .blog-post p{
   text-align: left;
-  margin-right: 50%;
 }
 
-.summary{visibility: hidden;}
+p.summary{text-align:center;}
+
+.blog-post img{
+  border: white;
+  border-style:groove;
+  
+}
