@@ -14,30 +14,30 @@ a:link,
 a:active {
   color:#FF33CC;
   text-decoration:none;
-  font-size:16px
+  font-size:16px;
 }
 p {
   color:#FFFFFF;
   text-align:center;
-  font-size:16px
+  font-size:16px;
 }
 h1 {
   text-align:center;
-  font-size:32px
+  font-size:32px;
 }
 h3 {
   text-align:center;
-  font-size:24px
+  font-size:24px;
 }
 h6 {
   text-align:center;
-  font-size:18px
+  font-size:18px;
 }
 .centered {
   position:fixed;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%)
+  transform:translate(-50%, -50%);
 }
 .startpagelinkbox {
   padding:7px;
@@ -45,15 +45,15 @@ h6 {
   margin:auto;
   outline:#CCCCCC solid 1px;
   display:table;
-  font-size:24px
+  font-size:24px;
 }
 #startpagelink {
   font-size:24px;
-  display:inline
+  display:inline;
 }
 #searchbar {
   text-align:center;
-  margin:3%
+  margin:3%;
 }
 #searchquery {
   background-color:#131313;
@@ -63,24 +63,24 @@ h6 {
 }
 header {
   width:100%;
-  height:30%
+  height:30%;
 }
 .navmenu {
   text-align:center;
-  position:relative
+  position:relative;
 }
 .introcontainer {
   margin-top:1%;
   display:inline-flex;
   justify-content:center;
-  width:100%
+  width:100%;
 }
 .pfp {
   width:10%;
-  height:10%
+  height:10%;
 }
 .intro {
-  margin:1%
+  margin:1%;
 }
 .wallpaper {
   width:100%;
@@ -88,13 +88,13 @@ header {
   position:absolute;
   opacity:10%;
   object-fit:cover;
-  z-index:-1
+  z-index:-1;
 }
 img[alt=image] {
   width:20%;
   height:20%;
   margin:left;
-  margin:right
+  margin:right;
 }
 @media only screen and (max-width: 500px) {
   .pfp {
@@ -102,20 +102,20 @@ img[alt=image] {
     height:30%;
     display:block;
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
   }
   .introcontainer {
-    display:contents
+    display:contents;
   }
   .intro {
-    margin:10%
+    margin:10%;
   }
   .wallpaper {
-    width:100%
+    width:100%;
   }
   img[alt=image] {
     width:50%;
-    height:50%
+    height:50%;
   }
 }
 
