@@ -38,9 +38,9 @@ an OS from scratch on a new drive.
 
 Update 30/09/2024: 
 Booting from NVMe actually works, my initial mistake was not performing a clean install through the laptop, here's a few images showing it booting and a drive speed benchmark:
-![image](https://github.com/bassusteur/thinkpad13nvme/blob/main/images/IMG_20240910_115838.jpg)
-![image](https://github.com/bassusteur/thinkpad13nvme/blob/main/images/IMG_20240910_132825.jpg)
-![image](https://github.com/bassusteur/thinkpad13nvme/blob/main/images/IMG_20240910_181639.jpg)    
+![image](https://raw.githubusercontent.com/bassusteur/thinkpad13nvme/refs/heads/main/images/IMG_20240910_115838.jpg)
+![image](https://raw.githubusercontent.com/bassusteur/thinkpad13nvme/refs/heads/main/images/IMG_20240910_132825.jpg)
+![image](https://raw.githubusercontent.com/bassusteur/thinkpad13nvme/refs/heads/main/images/IMG_20240910_181639.jpg)    
 
 
 
