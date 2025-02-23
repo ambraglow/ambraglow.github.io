@@ -37,33 +37,14 @@ h6 {
   text-align:center;
   font-size:18px;
 }
+#links-title {
+  color: gray
+}
 .centered {
   position:fixed;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-}
-.startpagelinkbox {
-  padding:7px;
-  position:relative;
-  margin:auto;
-  outline:#CCCCCC solid 1px;
-  display:table;
-  font-size:24px;
-}
-#startpagelink {
-  font-size:24px;
-  display:inline;
-}
-#searchbar {
-  text-align:center;
-  margin:3%;
-}
-#searchquery {
-  background-color:#131313;
-  font-size:16px;
-  color:#FFFFFF;
-  font-family:"PixelOperator",monospace;
 }
 header {
   width:100%;
