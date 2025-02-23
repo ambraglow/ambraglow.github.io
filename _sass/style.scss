@@ -89,7 +89,13 @@ header {
 .wallpaper {
   width:100%;
   height:100%;
-  position:absolute;
+  position:absolute;list">
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
   opacity:10%;
   object-fit:cover;
   z-index:-1;
@@ -107,6 +113,11 @@ img[alt=image] {
 p.summary {
   text-align:center;
 }
+
+#bloglist {
+  list-style: none;
+}
+
 .blog-post img {
   border:gray;
   border-style:groove;
