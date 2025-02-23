@@ -6,8 +6,7 @@ body {
   background-color:#131313;
   color:#00E600;
   font-family:"PixelOperator", monospace;
-  margin:auto;
-  padding-bottom: 2rem;
+  margin:auto
 }
 a:hover,
 a:visited,
@@ -90,7 +89,6 @@ img[alt=image] {
 p.summary {
   text-align:center;
   color:gray;
-  padding-top:2rem;
 }
 #bloglist {
   padding-left:0;
@@ -131,7 +129,8 @@ footer {
   color:gray
 }
 .container {
-  padding-bottom: 2rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
 }
 @media (max-width: 700px) {
   .pfp {
@@ -170,9 +169,9 @@ footer {
     text-align:center
   }
   .ftcontainer {
-    visibility: hidden;
+    visibility:hidden
   }
   .links {
-    text-align: center;
+    text-align:center
   }
 }
