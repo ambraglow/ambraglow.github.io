@@ -67,7 +67,11 @@ header {
   border-radius: 100%;
 }
 .intro {
-  margin:1%;
+  height:0%;
+  margin: 1rem;
+  width: 20rem;
+  word-break: break-word;
+  text-align: left;
 }
 .wallpaper {
   width:100%;
