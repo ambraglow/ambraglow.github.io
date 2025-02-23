@@ -87,7 +87,9 @@ img[alt=image] {
   margin:0rem 20rem
 }
 p.summary {
-  text-align:center
+  text-align:center;
+  color:gray;
+  padding-top:2rem;
 }
 #bloglist {
   padding-left:0;
@@ -126,6 +128,9 @@ footer {
 }
 .text p {
   color:gray
+}
+.container {
+  padding-bottom: 2rem;
 }
 @media (max-width: 700px) {
   .pfp {
