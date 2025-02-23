@@ -88,7 +88,7 @@ img[alt=image] {
 }
 p.summary {
   text-align:center;
-  color:gray;
+  color:gray
 }
 #bloglist {
   padding-left:0;
@@ -102,10 +102,10 @@ p.summary {
   display:block
 }
 .blog-post ul {
-  display: table;
-  margin: 1rem 20rem 1rem;
-  text-align: left;
-  color: grey;
+  display:table;
+  margin:1rem 20rem 1rem;
+  text-align:left;
+  color:grey
 }
 footer {
   width:100%;
@@ -116,27 +116,25 @@ footer {
   display:flex;
   flex-direction:row;
   gap:1rem;
-  margin-left:10%;
+  margin-left: 1rem;
   margin-right:1rem;
-  align-items:center
+  align-items:center;
 }
 .buttons {
-  flex:0 0 auto
+  flex:0 0 auto;
+  
 }
 .buttons img {
   width:88px;
   height:31px;
   image-rendering:pixelated
 }
-.text {
-  flex-grow:1
-}
 .text p {
   color:gray
 }
 .container {
   padding-top:2rem;
-  padding-bottom:2rem;
+  padding-bottom:2rem
 }
 @media (max-width: 700px) {
   .pfp {
