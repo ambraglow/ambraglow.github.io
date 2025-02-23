@@ -11,13 +11,13 @@ i found out why:
  
 "must be an easy fix" i told myself, unaware of the chaos to come, _so i just bought it right away_.
 I receive it the next week, and the next few are a waiting game for the other components to be delivered - now it's Thursday and i'm HYPED to get this thing working, so i assemble it and
-the system _partially_ works:
+the system _partially_ works:  
 - RGB lights are on
 - i get a POST beep without errors
 - motherboard logo screen
 - debugging lights work and the VGA led is on   
 
-What doesn't work though:
+What doesn't work though:  
 - any type of input
 - the screen is literally frozen
 
